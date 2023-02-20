@@ -1,0 +1,19 @@
+@mixin imageStyle($width,$height,$radius) {
+    width: $width;
+    height:$height;
+    border-radius: $radius;
+}
+@mixin textStyle($color,$size,$weight){
+    font-size: $size;
+    font-weight:$weight;
+    color: $color;
+ 
+}
+@mixin hoverStyle($hoverColor,$bgColor){
+    &:hover{
+        font-size: larger;
+        color: $hoverColor;
+        background-color:$bgColor;
+    }
+}
+ 

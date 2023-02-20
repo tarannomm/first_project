@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+.loadContainer {
+  img {
+    @include imageStyle(100%, 530px, 0);
+  }
+}
+.textContainer {
+     position: absolute;
+    bottom:100px;
+    padding-left:40px;
+  h1 {
+   
+    @include textStyle($blue_color, 70px, bold);
+  }
+  h3 {
+    @include textStyle($gray_color,40px,100);
+  }
+}
