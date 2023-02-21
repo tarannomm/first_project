@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+.cardContainer {
+  width: fit-content;
+  box-shadow: 0 0 4px 2px $gray_color;
+  border-radius: 10px;
+  overflow: hidden;
+  img {
+    @include imageStyle(250px, 200px, 0);
+  }
+  .contentContainer { 
+     padding: 15px;
+    h3 {
+      @include textStyle($dark_color, 17px, bold);
+      margin:13px 0;
+     
+    }
+    p {
+      @include textStyle($lightgray_color, 15px, bold);
+      background-color: $orange_color;
+      display: inline;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixins";
+.searchContainer{
+    background-color:$blue-color;
+    padding:50px;
+    display: flex;
+    justify-content: space-around;
+    h1{
+        @include textStyle($lightgray_color,50px,bold)
+    }
+    input{
+        border: none;
+        outline:none;
+        border-radius: 10px;
+        width: 300px;
+        @include textStyle($dark_color,30px,100);
+        padding: 10px;
+        &::placeholder{
+            color:$lightgray_color;
+        }
+
+    }
+}
