@@ -1,0 +1,17 @@
+@import "mixins";
+@import "variables";
+.logoContainer{
+   display:flex;
+   flex-direction: column;
+   align-items:center;
+   padding-top: 30px ;
+   h2{
+    @include textStyle($dark_color,45px,bold);
+   }
+}
+.imageContainer{
+    img{
+     @include imageStyle(220px,220px,0);
+     margin:0 50px;
+    } 
+}
