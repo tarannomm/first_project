@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixins";
+.footerContainer{
+    background-color:$dark_color ;
+    padding-top:15px;
+    
+    p{
+        @include textStyle($lightgray_color,16px,100);
+        text-align: center;
+    }
+}
