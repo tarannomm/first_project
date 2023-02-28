@@ -17,3 +17,8 @@
     @include textStyle($gray_color,40px,100);
   }
 }
+@include media('L'){
+  img{
+    @include imageStyle(100% , 300px , 0)
+  }
+}
