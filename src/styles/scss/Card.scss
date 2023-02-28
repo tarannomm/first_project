@@ -23,4 +23,24 @@
       border-radius: 5px;
     }
   }
+  .counter{
+    border-top: 1px solid $gray_color;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    img{
+      @include imageStyle(30px,30px,0);
+      margin: 10px;
+    }
+    span{
+      background-color:$orange_color;
+      padding: 7px;
+      border-radius:5px;
+      @include textStyle($lightgray_color,16px,bold);
+    }
+    .countSpan{
+      opacity: 0.6;
+    }
+  }
 }
+
