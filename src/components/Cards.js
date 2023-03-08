@@ -9,10 +9,10 @@ import "../styles/css/Cards.css";
 const Cards = () => {
     return (
         <div className='cardsContainer'>
-            <Card image={s21} title="s21" price="800$"/>
-            <Card image={iphonex} title="iphonex" price="600$"/>
-            <Card image={iphone12} title="iphone12" price="900$"/>
-            <Card image={iphone13} title="iphone13" price="1200$"/>
+            <Card image={s21} title="s21" price="800"/>
+            <Card image={iphonex} title="iphonex" price="600"/>
+            <Card image={iphone12} title="iphone12" price="900"/>
+            <Card image={iphone13} title="iphone13" price="1200"/>
         </div>
     );
 };

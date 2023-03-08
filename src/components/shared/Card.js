@@ -16,7 +16,7 @@ const Card = (props) => {
       <img src={image} alt="products" />
       <div className="contentContainer">
         <h3>{title}</h3>
-        <p>{price}</p>
+        <p>{`${price} $`}{count?`* ${count} = ${price*count} $`:''}</p>
       </div>
       <div className="counter">
        <img src={up} alt="up" onClick={()=>setCount(count+1)}/>
