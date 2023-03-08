@@ -1,38 +1,38 @@
-@mixin imageStyle($width,$height,$radius) {
-    width: $width;
-    height:$height;
-    border-radius: $radius;
+@mixin imageStyle($width, $height, $radius) {
+  width: $width;
+  height: $height;
+  border-radius: $radius;
 }
-@mixin textStyle($color,$size,$weight){
-    font-size: $size;
-    font-weight:$weight;
-    color: $color;
- 
+@mixin textStyle($color, $size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
 }
 // @mixin  boxStyle($width,$padding,$radius) {
 //     width:$width;
 //     border-radius:$radius ;
 
-    
 // }
-@mixin hoverStyle($hoverColor,$bgColor){
-    &:hover{
-        font-size: larger;
-        color: $hoverColor;
-        background-color:$bgColor;
-    }
+@mixin hoverStyle($hoverColor, $bgColor) {
+  &:hover {
+    font-size: larger;
+    color: $hoverColor;
+    background-color: $bgColor;
+  }
 }
 //mixin function to responsive page
 @mixin media($size) {
-     @if($size=='L'){
-        @media (max-width:768px) {
-            @content;
-        }
-     }
-     @else if($size=="M"){
-        @media (max-width:460px){
-            @content;
-        }
-     }
+  @if ($size == "XL") {
+    @media (max-width: 1000px)  {
+      @content;
+    }
+  } @else if($size== "L") {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if($size== "M") {
+    @media (max-width: 460px) {
+      @content;
+    }
+  }
 }
- 

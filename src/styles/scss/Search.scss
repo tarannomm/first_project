@@ -5,14 +5,16 @@
     padding:50px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     h1{
-        @include textStyle($lightgray_color,50px,bold)
+        @include textStyle($lightgray_color,45px,bold);
+        margin-bottom:10px;
     }
     input{
         border: none;
         outline:none;
         border-radius: 10px;
-        width: 300px;
+        width: 270px;
         height: 50px;
         @include textStyle($dark_color,30px,100);
         padding: 10px;
@@ -21,4 +23,34 @@
         }
 
     }
+}
+@include media('XL'){
+    .searchContainer{
+    h1{
+        font-size:30px;
+    }
+input{
+    width: 220px;
+    font-size: 20px;
+}}
+    
+}
+@include media('L'){
+    .searchContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@include media('M'){
+    .searchContainer{
+       h1{
+        font-size:14px;
+       }
+       input{
+        width: 180px;
+       }
+       
+    }
+    
 }
