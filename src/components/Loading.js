@@ -6,7 +6,7 @@ const Loading = () => {
     <div className="loadContainer">
       <img src={load} alt="react Images" />
       <div className="textContainer">
-        <h1>React</h1>
+        <h2>React</h2>
         <h3>We're learning react.js</h3>
       </div>
     </div>

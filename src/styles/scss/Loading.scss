@@ -1,24 +1,46 @@
 @import "variables";
 @import "mixins";
 .loadContainer {
+  position: relative;
   img {
     @include imageStyle(100%, 530px, 0);
   }
 }
 .textContainer {
      position: absolute;
-    bottom:100px;
+    bottom:75px;
     padding-left:40px;
-  h1 {
+  h2 {
    
     @include textStyle($blue_color, 70px, bold);
   }
   h3 {
-    @include textStyle($gray_color,40px,100);
+    @include textStyle($gray_color,35px,100);
+    
   }
 }
-@include media('L'){
+@include media('XL'){
+  .loadContainer{
   img{
-    @include imageStyle(100% , 300px , 0)
+    @include imageStyle(100% ,350px , 0)
+  }}
+  .textContainer{
+  
+  h2{
+   font-size: 50px;
+  }
+  h3{
+    font-size: 20px;
+  }
+}}
+@include media('M'){
+  .textContainer{
+  
+    h2{
+     font-size:20px;
+    }
+    h3{
+      font-size:13px;
+    }
   }
 }
