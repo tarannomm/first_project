@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   img {
     @include imageStyle(50px, 50px, 50%);
@@ -32,7 +33,7 @@ li {
   background-color: $dark_color;
   width: 180px;
   position: absolute;
-  top: 55px;
+  top:35px;
   right: 0;
 
   li {
@@ -53,9 +54,22 @@ li {
     background-color: $lightgray_color;
   }
 }
-@include media("L") {
+ 
+@include media(L) {
+  .navContainer {
+    padding: 7px 15px ;
+    img {
+      @include imageStyle(30px, 30px, 50%);
+    }
+  }
   .navList {
     display: none;
+  }
+  .navList2{
+    z-index: 15;
+    li{
+      padding: 15px 0;
+    }
   }
 
   .hamburgerMenu,

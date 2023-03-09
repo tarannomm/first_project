@@ -21,7 +21,7 @@ const Card = (props) => {
       <div className="counter">
        <img src={up} alt="up" onClick={()=>setCount(count+1)}/>
        <span className={count?'':'countSpan'}>{count}</span>
-       <img src={down} alt="down" onClick={downCounter}/>
+       <img  className={count?'':'countSpan'} src={down} alt="down" onClick={downCounter}/>
       </div>
     </div>
   );

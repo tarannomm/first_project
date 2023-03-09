@@ -1,12 +1,12 @@
 @import "variables";
 @import "mixins";
 .cardContainer {
-  width: fit-content;
+ 
   box-shadow: 0 0 4px 2px $gray_color;
   border-radius: 10px;
   overflow: hidden;
   img {
-    @include imageStyle(250px, 200px, 0);
+    @include imageStyle(100%, 200px, 0);
   }
   .contentContainer { 
      padding: 15px;

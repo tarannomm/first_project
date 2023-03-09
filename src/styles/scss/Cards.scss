@@ -1,5 +1,26 @@
-.cardsContainer{
-    display: flex;
-    padding: 20px 70px;
-    justify-content: space-around;
+@import "variables";
+@import "mixins";
+.cardsContainer {
+    width: calc(100% - 4rem);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 35px;
+  margin:20px auto;
+  
+}
+@include media(XL){
+    .cardsContainer{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+@include media(L){
+    .cardsContainer{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@include media(M){
+    .cardsContainer{
+        grid-template-columns:1fr;
+    }
 }

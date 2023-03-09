@@ -1,1 +1,1 @@
-.cardsContainer{display:flex;padding:20px 70px;justify-content:space-around}/*# sourceMappingURL=Cards.css.map */
+.cardsContainer{width:calc(100% - 4rem);display:grid;grid-template-columns:repeat(4, 1fr);grid-template-rows:auto;gap:35px;margin:20px auto}@media(max-width: 1000px){.cardsContainer{grid-template-columns:repeat(3, 1fr)}}@media(max-width: 768px){.cardsContainer{grid-template-columns:repeat(2, 1fr)}}@media(max-width: 460px){.cardsContainer{grid-template-columns:1fr}}/*# sourceMappingURL=Cards.css.map */

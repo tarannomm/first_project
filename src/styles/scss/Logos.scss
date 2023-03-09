@@ -15,7 +15,7 @@
      margin:0 50px;
     } 
 }
-@include media('XL'){
+@include media(XL){
     .logoContainer{
     h2{
         font-size:25px;
@@ -24,6 +24,18 @@
         img{
             @include imageStyle(130px,130px,0);
             margin: 0 15px;
+        }
+    }
+}
+@include media(M){
+    .logoContainer{
+    h2{
+        font-size:15px;
+    }}
+    .imageContainer{
+        img{
+            @include imageStyle(70px,70px,0);
+            margin: 0 10px;
         }
     }
 }

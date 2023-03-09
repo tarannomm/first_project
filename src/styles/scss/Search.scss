@@ -24,7 +24,7 @@
 
     }
 }
-@include media('XL'){
+@include media(XL){
     .searchContainer{
     h1{
         font-size:30px;
@@ -35,14 +35,14 @@ input{
 }}
     
 }
-@include media('L'){
+@include media(L){
     .searchContainer{
         flex-direction: column;
         align-items: center;
     }
     
 }
-@include media('M'){
+@include media(M){
     .searchContainer{
        h1{
         font-size:14px;

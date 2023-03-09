@@ -8,7 +8,7 @@
 }
 .textContainer {
      position: absolute;
-    bottom:75px;
+    bottom:50px;
     padding-left:40px;
   h2 {
    
@@ -19,7 +19,7 @@
     
   }
 }
-@include media('XL'){
+@include media(XL){
   .loadContainer{
   img{
     @include imageStyle(100% ,350px , 0)
@@ -33,7 +33,11 @@
     font-size: 20px;
   }
 }}
-@include media('M'){
+@include media(M){
+  .loadContainer{
+    img{
+      @include imageStyle(100% ,230px , 0)
+    }}
   .textContainer{
   
     h2{

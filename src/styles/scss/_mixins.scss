@@ -22,15 +22,15 @@
 }
 //mixin function to responsive page
 @mixin media($size) {
-  @if ($size == "XL") {
+  @if ($size == XL) {
     @media (max-width: 1000px)  {
       @content;
     }
-  } @else if($size== "L") {
+  } @else if($size== L) {
     @media (max-width: 768px) {
       @content;
     }
-  } @else if($size== "M") {
+  } @else if($size== M) {
     @media (max-width: 460px) {
       @content;
     }
