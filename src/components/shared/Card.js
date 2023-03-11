@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "../../styles/css/Card.css";
 import up from "../../images/up.svg";
 import down from "../../images/down.svg";
+import { Link } from "react-router-dom";
 const Card = (props) => {
-  const { image, title, price } = props;
+  const { image, title, price,id } = props;
   const [count,setCount]=useState(0);
   const downCounter=()=>{
     if(count>0){
@@ -15,7 +16,9 @@ const Card = (props) => {
     <div className="cardContainer">
       <img src={image} alt="products" />
       <div className="contentContainer">
-        <h3>{title}</h3>
+        <h3>
+          <Link to={`/products/${id}`}>{title}</Link>
+        </h3>
         <p>{`${price} $`}{count?` * ${count} = ${price*count} $`:''}</p>
       </div>
       <div className="counter">

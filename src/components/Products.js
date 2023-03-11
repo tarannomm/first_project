@@ -12,7 +12,7 @@ const Products = () => {
       });
     return (
         <div className='productsContrainer'>
-             {products.length? products.map((product)=><Card key={product.id} style={{width:40}} image={product.image} title={product.title} price={product.price}/>):<img style={{margin:100}} src={loading} alt='loading gif'/>}
+             {products.length? products.map((product)=><Card key={product.id} id={product.id} image={product.image} title={product.title} price={product.price}/>):<img style={{margin:100}} src={loading} alt='loading gif'/>}
             
         </div>
     );
