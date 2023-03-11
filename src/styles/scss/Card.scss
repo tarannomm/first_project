@@ -1,18 +1,20 @@
 @import "variables";
 @import "mixins";
 .cardContainer {
- 
+  width: 250px;
   box-shadow: 0 0 4px 2px $gray_color;
   border-radius: 10px;
   overflow: hidden;
+  background-color:#FFF;
+  margin:15px;
   img {
     @include imageStyle(100%, 200px, 0);
   }
   .contentContainer { 
-     padding: 15px;
+     padding: 10px 15px;
     h3 {
       @include textStyle($dark_color, 17px, bold);
-      margin:13px 0;
+      margin-bottom: 15px;
      
     }
     p {
